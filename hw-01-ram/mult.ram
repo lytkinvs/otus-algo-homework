@@ -1,0 +1,61 @@
+;<input>  5 3
+;<input>  1111 111
+;<input>  1 1000000
+;<input>  1000000 1
+;<input>  123 0
+;<input>  0 456
+
+<input>  7 19
+
+read 1
+read 2
+
+;;если один из аргументов равен нулю, выводим в ответ 0 и завершаем выполнение ;;
+load 1
+jz arg0
+load 2
+jz arg0;
+
+
+;; Проверяем какой из аргументов больше, если второй больше меняем их местами ;;
+load 1
+sub 2
+
+jgtz afterswap
+jz afterswap
+
+load 1
+add 2
+store 2
+sub 1
+store 1
+load 2
+sub 1
+store 2
+
+
+;; Реализация алгоритма. Суммируем в цикле ;;
+;; На втором месте меньший аргумент, чтобы уменьшить количество раундов ;;
+
+afterswap: 
+    load = 0
+    store 3
+  
+    loop:
+        load 3
+        add 1
+        store 3
+
+        load 2
+        sub =1 
+        store 2
+    jgtz loop
+    jmp result
+
+arg0:
+    load =0
+    store 3
+
+result:
+    write 3
+    halt
