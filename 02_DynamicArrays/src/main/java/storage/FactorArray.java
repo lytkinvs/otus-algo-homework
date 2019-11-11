@@ -34,6 +34,37 @@ public class FactorArray<T> implements IArray<T> {
         return array[index];
     }
 
+    @Override
+    public void add(T item, int index) {
+        if (index > size() || index < 0) return;
+
+        var newArray = (T[]) new Object[size() + 1];
+
+        System.arraycopy(array, 0, newArray, 0, index);
+
+        newArray[index] = item;
+
+        System.arraycopy(array, index, newArray, index + 1, size() - index);
+
+        array = newArray;
+        size++;
+    }
+
+    @Override
+    public T remove(int index) {
+        if (index > size() || index < 0) return null;
+
+        var item = array[index];
+
+        var newArray = (T[]) new Object[size() - 1];
+
+        System.arraycopy(array, 0, newArray, 0, index);
+
+        System.arraycopy(array, index + 1, newArray, index, size() - index - 1);
+
+        array = newArray;
+        size--;
+
+        return item;
+    }
 }
-
-
