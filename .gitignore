@@ -1,0 +1,13 @@
+target/
+dist/
+.tmp/
+.project
+.classpath
+.settings
+.metadata/
+*.log
+*.tmp
+*.zip
+*.bak
+
+\.idea/workspace\.xml
