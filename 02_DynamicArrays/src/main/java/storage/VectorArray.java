@@ -68,4 +68,8 @@ public class VectorArray<T> implements IArray<T> {
 
         return item;
     }
+
+    public void set(T item, int index) {
+        this.array[index] = item;
+    }
 }

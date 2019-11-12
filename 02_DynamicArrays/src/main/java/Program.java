@@ -1,7 +1,57 @@
 import storage.*;
 
 class Program {
+
+    public static void Evp(int a, int b) {
+        while (a != 0 && b != 0) {
+            if (a > b) {
+                a = a % b;
+            } else {
+                b = b % a;
+            }
+        }
+
+    }
+
+
+    static boolean isPrime(long p) {
+
+        if(p == 2) return true;
+        for(int j = 3; j * j <= p;j++) {
+            if(p % j == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void pow(double a, int pow) {
+        var res = a;
+
+        long k;
+        for (k = 1; k < pow / 2; k *= 2) {
+            res *= res;
+        }
+
+//        for(; k < pow; k++) {
+//            res *= a;
+//        }
+        System.out.println(k);
+        System.out.println(res);
+    }
+
     public static void main(String args[]) {
+//        int N = 100000;
+//
+//        long count = 0;
+//        for(int i = 2; i < N; i++) {
+//            if(isPrime(i)) count++;
+//        }
+//
+//        System.out.println(count);
+//        pow(1.000001, 1000000);
+//        Evp(125, 15);
+
 //        IArray<String> vectorArray = new VectorArray<>(1000);
 //        IArray<String> factorArray = new FactorArray<>();
 //        IArray<String> matrixArray = new MatrixArray<>(500);

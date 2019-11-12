@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="02_DynamicArrays" />
+        <module name="03_Algebraic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="02_DynamicArrays" target="10" />
+      <module name="03_Algebraic" target="10" />
       <module name="otus_algo_homework" target="1.5" />
     </bytecodeTargetLevel>
   </component>
