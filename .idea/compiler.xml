@@ -6,13 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="02_DynamicArrays" />
+        <module name="04_Sorting" />
         <module name="03_Algebraic" />
+        <module name="02_DynamicArrays" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="02_DynamicArrays" target="10" />
       <module name="03_Algebraic" target="10" />
+      <module name="04_Sorting" target="10" />
       <module name="otus_algo_homework" target="1.5" />
     </bytecodeTargetLevel>
   </component>

@@ -11,6 +11,7 @@
     <modules>
         <module>02_DynamicArrays</module>
         <module>03_Algebraic</module>
+        <module>04_Sorting</module>
     </modules>
 
 
