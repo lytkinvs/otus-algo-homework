@@ -3,10 +3,24 @@ import sorting.*;
 
 class Program {
 
-    public static void main(String args[]) {
+    public static void main(String args[]) throws Exception {
 
-        testHeapSortAndShellSort();
+//        testHeapSortAndShellSort();
 
+//        int length = 10;
+//
+//        var arr1 = ArrayHelper.create(length);
+//
+//        printArray(arr1);
+//        var s = new MergeSort(arr1);
+//
+//        s.sort();
+//
+//        printArray(arr1);
+
+        var fileHelper = new FileHelper();
+        fileHelper.fillFile();
+        System.out.println("Done");
     }
 
 
