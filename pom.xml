@@ -12,6 +12,7 @@
         <module>02_DynamicArrays</module>
         <module>03_Algebraic</module>
         <module>04_Sorting</module>
+        <module>05_BinaryTree</module>
     </modules>
 
 

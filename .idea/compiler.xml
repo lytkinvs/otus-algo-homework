@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="04_Sorting" />
         <module name="03_Algebraic" />
+        <module name="05_BinaryTree" />
         <module name="02_DynamicArrays" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
       <module name="02_DynamicArrays" target="10" />
       <module name="03_Algebraic" target="10" />
       <module name="04_Sorting" target="10" />
+      <module name="05_BinaryTree" target="10" />
       <module name="otus_algo_homework" target="1.5" />
     </bytecodeTargetLevel>
   </component>
