@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/03_Algebraic/03_Algebraic.iml" filepath="$PROJECT_DIR$/03_Algebraic/03_Algebraic.iml" />
       <module fileurl="file://$PROJECT_DIR$/04_Sorting/04_Sorting.iml" filepath="$PROJECT_DIR$/04_Sorting/04_Sorting.iml" />
       <module fileurl="file://$PROJECT_DIR$/05_BinaryTree/05_BinaryTree.iml" filepath="$PROJECT_DIR$/05_BinaryTree/05_BinaryTree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_SegmentTree/06_SegmentTree.iml" filepath="$PROJECT_DIR$/06_SegmentTree/06_SegmentTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/otus_algo_homework.iml" filepath="$PROJECT_DIR$/otus_algo_homework.iml" />
     </modules>
   </component>

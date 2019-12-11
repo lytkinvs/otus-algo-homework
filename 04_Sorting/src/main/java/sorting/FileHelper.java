@@ -1,6 +1,5 @@
 package sorting;
 
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.Writer;
 import java.util.Random;
